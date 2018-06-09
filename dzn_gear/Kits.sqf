@@ -48,12 +48,16 @@
 
 #define UNIFORM_ITEMS		["ACE_fieldDressing",5],["ACE_packingBandage",5],["ACE_elasticBandage",5],["ACE_tourniquet",2],["ACE_morphine",2],["ACE_epinephrine",2],["ACE_quikclot",5],["ACE_CableTie",2],["ACE_Flashlight_XL50",1],["ACE_EarPlugs",1]
 #define UNIFORM_ITEMS_L		["ACE_fieldDressing",5],["ACE_packingBandage",5],["ACE_elasticBandage",5],["ACE_tourniquet",2],["ACE_morphine",2],["ACE_epinephrine",2],["ACE_quikclot",5],["ACE_CableTie",2],["ACE_Flashlight_XL50",1],["ACE_EarPlugs",1],["ACE_MapTools",1]
+
+#define USAF_GR ["rhs_weap_hk416d10_m320","rhs_weap_hk416d145_m320","rhs_weap_m4_m320","rhs_weap_m4a1_m320","rhs_weap_mk18_m320"],["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"]
+#define USAF_RIF ["rhs_weap_hk416d10","rhs_weap_hk416d10_LMT","rhs_weap_hk416d10_LMT_wd","rhs_weap_hk416d145","rhs_weap_m16a4","rhs_weap_m16a4_carryhandle_pmag","rhs_weap_m16a4_pmag","rhs_weap_m27iar","rhs_weap_m27iar_grip","rhs_weap_m4","rhs_weap_m4_pmag","rhs_weap_m4_mstock","rhs_weap_m4a1_carryhandle","rhs_weap_m4a1_carryhandle_mstock","rhs_weap_m4a1_blockII","rhs_weap_m4a1_blockII_bk","rhs_weap_m4a1_blockII_KAC_bk","rhs_weap_m4a1_blockII_wd","rhs_weap_m4a1_blockII_KAC_wd","rhs_weap_m4a1","rhs_weap_m4a1_pmag","rhs_weap_mk18","rhs_weap_mk18_bk","rhs_weap_mk18_wd","rhs_weap_mk18_KAC_wd"],["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"]
+
 // ****************
 
 
 kit_usaf_sl = [
 	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_iotv_ocp_Squadleader","tf_rt1523g_big_rhs","rhsusf_ach_helmet_headset_ess_ocp",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_m4_carryhandle_mstock","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green",["","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_ACOG3_USMC",""]],
+	["<PRIMARY WEAPON >>  ",USAF_RIF,["","rhsusf_acc_M952V","rhsusf_acc_ACOG3_USMC",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_FMJ",["","acc_flashlight_pistol","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
@@ -64,7 +68,7 @@ kit_usaf_sl = [
 
 kit_usaf_ftl = [
 	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_iotv_ocp_Teamleader","","rhsusf_ach_helmet_headset_ess_ocp",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_m4_m203","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green",["","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_ACOG3_USMC",""]],
+	["<PRIMARY WEAPON >>  ",USAF_GR,["","rhsusf_acc_M952V","rhsusf_acc_ACOG3_USMC",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","","",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
@@ -75,7 +79,7 @@ kit_usaf_ftl = [
 
 kit_usaf_ar = [
 	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_iotv_ocp_SAW","","rhsusf_ach_helmet_headset_ess_ocp",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_m249_pip_L","rhsusf_100Rnd_556x45_soft_pouch",["","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_SpecterDR_3d",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_m249_pip_L","rhsusf_100Rnd_556x45_soft_pouch",["","rhsusf_acc_M952V","rhsusf_acc_SpecterDR_3d",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -86,7 +90,7 @@ kit_usaf_ar = [
 
 kit_usaf_gr = [
 	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_iotv_ocp_Grenadier","","rhsusf_ach_helmet_headset_ess_ocp",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_m4_m203","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green",["","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_ACOG3_USMC",""]],
+	["<PRIMARY WEAPON >>  ",USAF_GR,["","rhsusf_acc_M952V","rhsusf_acc_ACOG3_USMC",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","","",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -97,7 +101,7 @@ kit_usaf_gr = [
 
 kit_usaf_r = [
 	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_iotv_ocp_Rifleman","rhsusf_assault_eagleaiii_ocp","rhsusf_ach_helmet_headset_ess_ocp",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_m4_carryhandle_mstock","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green",["","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_eotech_552",""]],
+	["<PRIMARY WEAPON >>  ",USAF_RIF,["","rhsusf_acc_M952V","rhsusf_acc_eotech_552",""]],
 	["<LAUNCHER WEAPON >>  ","rhs_weap_M136","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_FMJ",["","acc_flashlight_pistol","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -108,7 +112,7 @@ kit_usaf_r = [
 
 kit_usaf_marksman = [
 	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spcs_ocp_rifleman","","rhs_Booniehat_ocp",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_sr25","rhsusf_20Rnd_762x51_m62_Mag",["","rhsusf_acc_anpeq15side_bk","rhsusf_acc_M8541","rhsusf_acc_harris_bipod"]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_sr25","rhsusf_20Rnd_762x51_m62_Mag",["","rhsusf_acc_M952V","rhsusf_acc_M8541","rhsusf_acc_harris_bipod"]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],

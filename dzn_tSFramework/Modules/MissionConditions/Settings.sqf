@@ -48,8 +48,12 @@ tSF_MissionCondition_DefaultCheckTimer 			= 15;
  */
 
 // Код условия может быть строкой или кодом в { }
-MissionCondition1 = [ "WIN", "{(true)
+MissionCondition1 = [ "WIN", "((true)
 								&& call fnc_CheckPlayersReturned
 								&&  ({ _x inArea BaseTrg } count (VIP_Crates) > 11 )
-								}", "All objectives done" ];
-MissionCondition2 = [ "WIPED", { call fnc_isAllDead }, "All dead", 30 ];
+								)", "All objectives done" ];
+MissionCondition2 = [ "RETREAT", "((true)
+								&& call fnc_CheckPlayersReturned
+								&&  ({ _x inArea BaseTrg } count (VIP_Crates) > 3 )
+								)", "RETREAT" ];
+MissionCondition3 = [ "WIPED", { call fnc_isAllDead }, "All dead", 30 ];
